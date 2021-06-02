@@ -1,0 +1,13 @@
+name: "Hello World"
+
+on: push
+
+jobs:
+  run-something-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hola mundo
+        run: |
+          echo "hola mundo" >> algo.txt
+          echo "me llamo Sergio" >> algo.txt
+          echo "amo a Patita >> algo.txt

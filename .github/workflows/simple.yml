@@ -1,6 +1,12 @@
 name: Shell commands
 
-on: [push] 
+on: 
+    push:
+      branches:
+        - master
+        - 'feature/*' # es para features/algo
+        - 'feature/**' # es para feature/feate/algo
+        
 
 jobs:
   run-shell-command:

@@ -1,9 +1,8 @@
 name: Simple Actions
 
-on: 
+on: [push]
   # repository_dispatch:
   #   types: [build]
-  [push]
   #push:
   # schedule:
   #   - cron: "0 0 * * *"  
