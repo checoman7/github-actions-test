@@ -29,7 +29,6 @@ jobs:
           pwd
           ls -a
           git init
-          
           git remote add origin "https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git"
           git config --global user.email "my_bot@botmail.com"
           git config --global user.name "mybotname"
@@ -40,6 +39,7 @@ jobs:
           ls -a
           echo "patita love" >> l.txt
           ls -a
+          git status
           git add -A
           git commit -m "pl"
           git push
