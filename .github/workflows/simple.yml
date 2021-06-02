@@ -34,7 +34,7 @@ jobs:
           git config --global user.name "mybotname"
           git fetch
           git checkout master
-          git branch --set-upstream-to=origin/master
+          git branch - -set-upstream-to=origin/master
           git pull
           ls -a
           echo "patita love" >> l.txt
