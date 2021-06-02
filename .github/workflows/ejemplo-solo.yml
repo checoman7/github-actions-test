@@ -8,6 +8,6 @@ jobs:
     steps:
       - name: hola mundo
         run: |
-          echo "hola mundo" >> algo.txt
-          echo "me llamo Sergio" >> algo.txt
-          echo "amo a Patita >> algo.txt
+          echo "hola mundo" 
+          echo "me llamo Sergio" 
+          echo "amo a Patita" >> algo.txt
