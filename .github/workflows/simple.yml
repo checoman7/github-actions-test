@@ -35,7 +35,7 @@ jobs:
           git branch --set-upstream-to=origin/master
           git pull
           ls -a
-          echo "patita love" >> l.txt
+          echo "checoman love" >> l.txt
           ls -a
           git add -A
           git commit -m "pl"
