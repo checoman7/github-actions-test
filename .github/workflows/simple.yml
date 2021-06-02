@@ -21,26 +21,25 @@ jobs:
 
   create_commit:
     runs-on: ubuntu-latest 
-    permissions:
-      issues: write 
     steps:
-    # git remote add origin "https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY"
       - name: Push a random Files
         run: |
           pwd
           ls -a
           git init
-          git remote set-url origin ${{ secrets.ssh }}
+          git remote add origin "https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY"
           git config --global user.email "my_bot@botmail.com"
           git config --global user.name "mybotname"
-          git status
+          git fetch
+          git checkout master
+          git branch --set-upstream-to=origin/master
+          git pull
           ls -a
           echo "patita love" >> l.txt
           ls -a
-          git add .
+          git add -A
           git commit -m "pl"
-          git fetch origin master
-          git push origin HEAD:master
+          git push
 
       - name: Create issue using REST API
         run: |
