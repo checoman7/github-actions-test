@@ -36,9 +36,10 @@ jobs:
           git checkout master
           git branch --set-upstream-to=origin/master
           git pull
-          ls -a 
+          ls -a
           echo "patita love" >> l.txt
-          git add -A 
+          ls -a
+          git add -A
           git commit -m "pl"
           git push
 

@@ -1,24 +1,24 @@
-name: Simple Actions
+# name: Simple Actions
 
-on: [push]
-  # repository_dispatch:
-  #   types: [build]
-  #push:
-  # schedule:
-  #   - cron: "0 0 * * *"  
-  # pull_request:
-  #   types: [closed, assigned, opened, reopened]
+# on: [push]
+#   repository_dispatch:
+#     types: [build]
+#   push:
+#   schedule:
+#     - cron: "0 0 * * *"  
+#   pull_request:
+#     types: [closed, assigned, opened, reopened]
 
-jobs:
-  run-github-actions:
-    runs-on: ubuntu-latest
-    steps:
-      - name: List Files
-        id: greet
-        uses: actions/hello-world-javascript-action@v1
-        with:
-          who-to-greet: Sergio
-      - name: Log Greeting Time
-        run: echo "${{steps.greet.outputs.time}}"
+# jobs:
+#   run-github-actions:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: List Files
+#         id: greet
+#         uses: actions/hello-world-javascript-action@v1
+#         with:
+#           who-to-greet: Sergio
+#       - name: Log Greeting Time
+#         run: echo "${{steps.greet.outputs.time}}"
 
     

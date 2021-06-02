@@ -1,13 +1,13 @@
-name: "Hello World"
+# name: "Hello World"
 
-on: push
+# on: push
 
-jobs:
-  run-something-command:
-    runs-on: ubuntu-latest
-    steps:
-      - name: hola mundo
-        run: |
-          echo "hola mundo" 
-          echo "me llamo Sergio" 
+# jobs:
+#   run-something-command:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: hola mundo
+#         run: |
+#           echo "hola mundo" 
+#           echo "me llamo Sergio" 
           
