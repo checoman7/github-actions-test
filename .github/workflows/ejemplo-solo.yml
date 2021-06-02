@@ -10,4 +10,4 @@ jobs:
         run: |
           echo "hola mundo" 
           echo "me llamo Sergio" 
-          echo "amo a Patita" >> algo.txt
+          
